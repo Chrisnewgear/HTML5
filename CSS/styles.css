@@ -9,12 +9,23 @@
 
 #barralateral{
     background-color: cyan;
+    float: left;
+    height: 1539px;
 }
 
 #contenidoprincipal {
     background-color: darkolivegreen;
+    margin-left: 210px;
 }
 
 #pieprincipal {
     background-color: darkorange;
+    clear: both;
+    margin-top: 20px;
 }
+
+li {
+    background-color: greenyellow;
+    display: inline;
+}
+
