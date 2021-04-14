@@ -6,15 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        p[name$="os"]{
-            color: #f00;
+        #principal{
+            width: 500px;
+            background-color: blue;
+            text-align: center;
+            margin: 15px auto;
+            color: white;
+            padding: 15px;/*si se pone una sola medida, se entiende que es para los 4 lados*/
+            border: 3px solid red;/*agregega un borde alrededor de la caja, al poner un solo valor de pixeles, se entiende que es 3px por lado*/
+            border-radius: 15px;/*Agrega un borde redondeado a la la caja, y la medida en pixeles es la redondez de la caja*/
+            box-shadow:silver 5px 5px 5px;/*agrega sombra luego del color la medida es horizontal luego vertical y el ultimo es la difuminación de la sombra*/
+        }
+
+        #titulo{
+            font: bold 36px verdana;/*en la propiedad font: se puede poner el tipo de letra bold, italic, el tamño en pixeles y e ltipo de letra*/ 
+            text-shadow: wheat 4px 4px 5px;/*agrega sombra luego del color la medida es horizontal luego vertical y el ultimo es la difuminación de la sombra*/
         }
     </style>
 </head>
 <body>
-    <p name="miselementos">Hola</p>
-    <p name="miselementos">Adios</p>
-    <p>Febrero</p>
-    
+    <header id="principal">
+        <span id="titulo">Estilos CSS3</span>
+    </header>   
 </body>
 </html>
