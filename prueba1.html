@@ -8,19 +8,39 @@
     <style>
         #principal{
             width: 500px;
-            background-color: blue;
+            /*background-color: blue;*/
             text-align: center;
             margin: 15px auto;
-            color: white;
+            /*color: white;*/
             padding: 15px;/*si se pone una sola medida, se entiende que es para los 4 lados*/
             border: 3px solid red;/*agregega un borde alrededor de la caja, al poner un solo valor de pixeles, se entiende que es 3px por lado*/
-            border-radius: 15px;/*Agrega un borde redondeado a la la caja, y la medida en pixeles es la redondez de la caja*/
+            border-radius: 15px;/*Agrega un borde redondeado a la caja, y la medida en pixeles es la redondez de la caja*/
             box-shadow:silver 5px 5px 5px;/*agrega sombra luego del color la medida es horizontal luego vertical y el ultimo es la difuminación de la sombra*/
+            background: -moz-linear-gradient(top, #00F, #3FF);
+            background: -o-linear-gradient(top, #00F, #3FF);
+            background: -webkit-radial-gradient(center, ellipse, red, yellow );
+            background: -ms-linear-gradient(top, #00F, #3FF);
+            /*outline: 2px dashed #00f;/*permite poner un borde punteado alrededor de una caja*/
+            /*outline-offset: 15px;/*permite espaciar el borde alrededor de la caja*/
+            /*-webkit-transform: scale(1,-1); /*permite escalar un elemento, 1 es el tamaño original, lo que supere eso incrementa el tamaño del elemento y menor a 1 lo disminuye*/
+            /*-webkit-transform: rotate(5deg);/*permite rotar el elemento*/
+            /*-webkit-transform: skew(30deg);*/
+            -webkit-transition:-webkit-transform 1s ease 0.5s;/*crea una suave transicion*/
+            }
+
+        #principal:hover{
+            -webkit-transform: rotate(5deg);
+        }
+
+        @font-face {
+            font-family: 'MiPropiaFuente';
+            src: url(BAUHS93.ttf);
         }
 
         #titulo{
-            font: bold 36px verdana;/*en la propiedad font: se puede poner el tipo de letra bold, italic, el tamño en pixeles y e ltipo de letra*/ 
+            font: bold 36px 'MiPropiaFuente';/*en la propiedad font: se puede poner el tipo de letra bold, italic, el tamaño en pixeles y el tipo de letra*/ 
             text-shadow: wheat 4px 4px 5px;/*agrega sombra luego del color la medida es horizontal luego vertical y el ultimo es la difuminación de la sombra*/
+            color: rgba(0,0,0,0.5);/*esto permite manejar los colores del texto y tambien darle transparencia al texto*/
         }
     </style>
 </head>
